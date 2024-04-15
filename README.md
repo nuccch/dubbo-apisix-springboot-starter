@@ -2,7 +2,7 @@
 
 ## 功能概述
 
-这是一个`胶水层`的Dubbo服务，为Dubbo应用提供APISIX调用入口。  
+这是一个`胶水层`的Spring Boot Starter组件，为Dubbo服务提供通过APISIX网关的调用入口。  
 
 ## 如何使用
 
@@ -16,6 +16,9 @@
 </dependency>
 ```
 3.在APISIX中创建路由信息
+
+在APISIX中通过`dubbo-proxy`插件创建与上游Dubbo服务的路由关系。
+
 ```shell
 curl http://127.0.0.1:9180/apisix/admin/routes/2  -H 'X-API-KEY: edd1c9f034335f136f87ad84b625c8f1' -X PUT -d '
 {
