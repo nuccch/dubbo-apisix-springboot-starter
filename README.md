@@ -7,10 +7,10 @@
 ## 如何使用
 
 1.先将该项目安装到Maven本地仓库：`mvn clean install -Dmaven.test.skip=true`  
-2.在需要给APISIX网关暴露Dubbo服务的模块中引入该组件：
+2.在需要给APISIX网关暴露Dubbo服务调用的模块中引入该组件：
 ```xml
 <dependency>
-    <groupId>org.chench.extra</groupId>
+    <groupId>org.chench.extra.spring.boot</groupId>
     <artifactId>dubbo-apisix-springboot-starter</artifactId>
     <version>1.0.0</version>
 </dependency>
